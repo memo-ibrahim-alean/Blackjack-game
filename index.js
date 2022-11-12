@@ -1,6 +1,7 @@
 let firstCard = 10;
 let secondCard = 4;
-let sum = firstCard + secondCard;
+let cards = [firstCard, secondCard];
+let sum = cards[0] + cards[1];
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
@@ -26,13 +27,13 @@ function renderGame() {
   }
 
   messageEl.textContent = message;
-  cardsEl.textContent = `Cards : ${firstCard} , ${secondCard}`;
+  cardsEl.textContent = `Cards : ${cards[0]} , ${cards[1]}`;
 }
 
 function newCard() {
-  let card = 7;
+  cards[1] = 8;
 
-  sum += 7;
+  sum += cards[1];
 
   renderGame();
 }
