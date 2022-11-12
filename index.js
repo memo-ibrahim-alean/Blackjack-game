@@ -9,11 +9,10 @@ let cardsEl = document.getElementById("cards-el");
 
 let player = {
   name: prompt("Enter Player Name !"),
-  Chips: 145,
 };
 
 let playerEl = document.getElementById("player-el");
-playerEl.textContent = player.name + ": $" + player.Chips;
+playerEl.textContent = "Hello," + player.name;
 
 function getRandomCard() {
   let randomNumer = Math.floor(Math.random() * 13) + 1;
