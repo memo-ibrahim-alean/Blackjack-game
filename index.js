@@ -12,7 +12,7 @@ let player = {
 };
 
 let playerEl = document.getElementById("player-el");
-playerEl.textContent = "Hello," + player.name;
+playerEl.textContent = "Hello, " + player.name;
 
 function getRandomCard() {
   let randomNumer = Math.floor(Math.random() * 13) + 1;
