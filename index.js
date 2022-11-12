@@ -6,6 +6,7 @@ let isAlive = true;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
+let cardsEl = document.querySelector("#cards-el");
 
 function startGame() {
   sumEl.textContent = "Sum: " + sum;
@@ -21,4 +22,5 @@ function startGame() {
   }
 
   messageEl.textContent = message;
+  cardsEl.textContent = `Cards : ${firstCard} , ${secondCard}`;
 }
