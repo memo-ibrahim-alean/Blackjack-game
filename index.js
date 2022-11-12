@@ -24,3 +24,7 @@ function startGame() {
   messageEl.textContent = message;
   cardsEl.textContent = `Cards : ${firstCard} , ${secondCard}`;
 }
+
+function newCard() {
+  console.log("Drawing a new card from the deck!");
+}
