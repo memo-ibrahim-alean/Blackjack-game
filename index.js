@@ -31,9 +31,11 @@ function renderGame() {
 }
 
 function newCard() {
-  cards[1] = 8;
+  let card = 6;
 
-  sum += cards[1];
+  sum += card;
+
+  cards.push(card);
 
   renderGame();
 }
