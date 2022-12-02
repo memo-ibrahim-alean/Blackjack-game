@@ -12,7 +12,7 @@ let player = {
 };
 
 let playerEl = document.getElementById("player-el");
-if (player.name !== "") {
+if (player.name !== null) {
   playerEl.textContent = "Hello, " + player.name;
 } else {
   playerEl.textContent = "Hello guest";
